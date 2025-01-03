@@ -1,11 +1,5 @@
-$tempFiles = Get-ChildItem -Path "C:\Users\start\ShoperyOrganic\temp" -Recurse -Force
-foreach ($file in $tempFiles) {
-    Remove-Item -Path $file.FullName -Force
-}
+# PowerShell script for automated backups
 
-Write-Output "Temporary files cleaned up."
-
-# Backup functionality
 # Define the files and directories to be backed up
 $sourcePaths = @(
     "C:\Users\start\ShoperyOrganic\important_files",
