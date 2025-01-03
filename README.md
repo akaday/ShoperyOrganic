@@ -28,4 +28,11 @@ The PowerShell script includes the following tasks:
 - **Build the project**: Compiles the project files.
 - **Run tests**: Executes the test suite.
 - **Deploy the application**: Deploys the application to the specified environment.
+- **Lint the project**: Lints the project files using the `npm run lint` command.
 
+### Example Command for Linting
+
+To lint the project, run:
+```powershell
+.\scripts\automation.ps1 -Task Lint
+```
