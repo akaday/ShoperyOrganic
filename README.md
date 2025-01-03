@@ -43,7 +43,7 @@ You can schedule the PowerShell scripts to run at regular intervals using Window
 
 ### Using `scripts/schedule_tasks.ps1`
 
-A new PowerShell script `scripts/schedule_tasks.ps1` has been added to create scheduled tasks for `automation.ps1`, `backup.ps1`, and `cleanup.ps1`.
+A new PowerShell script `scripts/schedule_tasks.ps1` has been added to create scheduled tasks for `automation.ps1`, `backup.ps1`, `cleanup.ps1`, `log_file_management.ps1`, and `software_update.ps1`.
 
 #### Usage
 
@@ -77,3 +77,49 @@ To schedule `scripts/automation.ps1` using Task Scheduler, follow these steps:
 7. In the "Program/script" field, enter `powershell.exe`.
 8. In the "Add arguments (optional)" field, enter `-File "C:\path\to\scripts\automation.ps1"`, replacing `C:\path\to\scripts\automation.ps1` with the actual path to the script.
 9. Click "Next", review the settings, and click "Finish" to create the task.
+
+## Log File Management Script
+
+This project includes a PowerShell script for log file management. The script is located at `scripts/log_file_management.ps1`.
+
+### Usage
+
+To use the log file management script, follow these steps:
+
+1. Open a PowerShell terminal.
+2. Navigate to the root directory of the project.
+3. Run the script using the following command:
+   ```powershell
+   .\scripts\log_file_management.ps1
+   ```
+
+### Tasks
+
+The log file management script includes the following tasks:
+
+- **Archive and compress log files**: Archives and compresses log files periodically.
+- **Move archived log files**: Moves the archived log files to a designated storage location.
+- **Error handling and logging**: Tracks log file management progress and issues.
+
+## Software Update Script
+
+This project includes a PowerShell script for automated software updates. The script is located at `scripts/software_update.ps1`.
+
+### Usage
+
+To use the software update script, follow these steps:
+
+1. Open a PowerShell terminal.
+2. Navigate to the root directory of the project.
+3. Run the script using the following command:
+   ```powershell
+   .\scripts\software_update.ps1
+   ```
+
+### Tasks
+
+The software update script includes the following tasks:
+
+- **Check for software updates**: Checks for software updates.
+- **Install software updates**: Installs software updates.
+- **Error handling and logging**: Tracks update progress and issues.
