@@ -1,4 +1,10 @@
 # ShoperyOrganic
+## Maintenance Scripts
+
+### Cleanup Script
+To clean up temporary files, run:
+```powershell
+.\scripts\cleanup.ps1
 
 ## Automation with PowerShell
 
